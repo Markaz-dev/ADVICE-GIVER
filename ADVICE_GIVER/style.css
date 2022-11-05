@@ -1,4 +1,27 @@
 body {
-  font-family: "Dosis", sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 500;
+}
+body section {
+  padding: 50px 0;
+}
+body .imgbox {
+  overflow: hidden;
+}
+body .imgbox img {
+  width: 100%;
+}
+
+#advicegiver {
+  background-color: #b6d6b4;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#advicegiver .box {
+  border: 1px solid black;
+  width: 250px;
+  height: 250px;
 }/*# sourceMappingURL=style.css.map */

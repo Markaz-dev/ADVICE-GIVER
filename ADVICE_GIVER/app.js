@@ -1,9 +1,13 @@
-"use strict";
-$(document).ready(function () {
-    https://www.trendyol.com/mancy/kadin-siyah-baskili-kapusonlu-sweatshirt-p-200345156?boutiqueId=615610&merchantId=434441&sav=true
+const advice = document.querySelector(".advice")
+const btn = document.querySelector(".submit")
 
 
-
-
-
-});
+btn.addEventListener('click', function (name) {
+    let url = "https://api.adviceslip.com/advice"
+    fetch(url)
+    .then(response => response.json())
+    .then(data =>{
+        console.log(data.slip.id);
+        console.log(data.slip.advice);
+    })
+})
